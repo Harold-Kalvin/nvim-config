@@ -11,11 +11,15 @@ return {
     },
 
     completion = {
+      menu = { border = 'single' },
       documentation = {
         auto_show = true,
         auto_show_delay_ms = 500,
+        window = { border = 'single' },
       }
     },
+
+    signature = { window = { border = 'single' } },
 
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
