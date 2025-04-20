@@ -10,7 +10,14 @@ return {
         section_separators = "",
       },
       sections = {
-        lualine_a = { "buffers" },
+        lualine_a = {
+          {
+            "buffers",
+            symbols = {
+              alternate_file = "",
+            }
+          }
+        },
         lualine_b = {},
         lualine_c = {},
         lualine_x = {},
