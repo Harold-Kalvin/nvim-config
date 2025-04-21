@@ -24,3 +24,8 @@ keymap.set("n", "<leader>tb", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true })
 keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true })
 
+-- window motions
+keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
+keymap.set('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
+keymap.set('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
+keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
