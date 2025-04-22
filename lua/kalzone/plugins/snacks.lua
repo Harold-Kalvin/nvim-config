@@ -14,8 +14,14 @@ return {
       sources = {
         explorer = {
           layout = { layout = { position = "right" } },
+          auto_close = true,
+          ignored = true,
+          hidden = true,
+        },
+        files = {
+          hidden = true,
         }
-      }
+      },
     },
     explorer = {},
   },
