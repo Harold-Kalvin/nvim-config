@@ -12,7 +12,7 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 keymap.set("n", "<Tab>", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
 keymap.set("n", "<S-Tab>", "<cmd>bprev<CR>", { desc = "Go to previous buffer" })
 keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
-keymap.set("n", "<leader>xx", "<cmd>bufdo bd<CR>", { desc = "Close all buffers" })
+keymap.set("n", "<leader>z", "<cmd>bufdo bd<CR>", { desc = "Close all buffers" })
 
 -- tab management
 keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Open new tab" })
