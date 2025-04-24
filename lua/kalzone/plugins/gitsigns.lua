@@ -2,6 +2,10 @@ return {
   "lewis6991/gitsigns.nvim",
   event = { "BufReadPre", "BufNewFile" },
   opts = {
+    current_line_blame = true,
+    current_line_blame_opts = {
+      delay = 500,
+    },
     on_attach = function(bufnr)
       local gs = package.loaded.gitsigns
 
@@ -17,6 +21,9 @@ return {
 
       -- split window
       map("n", "<leader>hd", gs.diffthis, "Diff this")
+
+      --toggles
+      map("n", "<leader>hB", gs.toggle_current_line_blame, "Toggle line blame")
 
       -- actions
       map("n", "<leader>hr", gs.reset_hunk, "Reset hunk")
