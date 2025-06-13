@@ -53,6 +53,7 @@ return {
     --  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
+    require("lspconfig").gdscript.setup(capabilities)
 
     -- Diagnostic Config
     -- See :help vim.diagnostic.Opts

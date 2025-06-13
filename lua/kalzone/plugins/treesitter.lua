@@ -34,6 +34,9 @@ return {
         "gitignore",
         "query",
         "vimdoc",
+        "gdscript",
+        "godot_resource",
+        "gdshader",
       },
       incremental_selection = {
         enable = true,
