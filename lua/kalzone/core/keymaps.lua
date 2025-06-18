@@ -30,3 +30,17 @@ keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 keymap.set('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 keymap.set('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
 keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
+
+-- toggle relative/absolute line numbers
+keymap.set('n', '<leader>tl', '', {
+  noremap = true,
+  callback = function()
+    if vim.wo.relativenumber then
+      vim.wo.relativenumber = false
+      vim.wo.number = true
+    else
+      vim.wo.relativenumber = true
+    end
+  end
+})
+
