@@ -17,6 +17,13 @@ return {
           auto_close = true,
           ignored = true,
           hidden = true,
+          win = {
+            list = {
+              keys = {
+                ["<C-c>"] = "cancel",
+              },
+            },
+          },
         },
         files = {
           hidden = true,
