@@ -21,12 +21,6 @@ keymap.set("n", "<leader>sx", "<cmd>close<cr>", { desc = "close current split" }
 keymap.set('n', '<C-d>', '<C-d>zz', opts)
 keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
--- window motions
-keymap.set('n', '<C-h>', '<C-w>h', opts)
-keymap.set('n', '<C-j>', '<C-w>j', opts)
-keymap.set('n', '<C-k>', '<C-w>k', opts)
-keymap.set('n', '<C-l>', '<C-w>l', opts)
-
 -- block hole register
 vim.keymap.set("n", "<leader>c", [["_c]], opts)
 vim.keymap.set("v", "<leader>c", [["_c]], opts)
